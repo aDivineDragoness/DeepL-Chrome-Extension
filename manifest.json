@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "DeepL translator",
+  "description": "iFrame of deepl.com/translator",
+  "version": "1.0",
+
+
+
+  "browser_action": {
+    "default_popup": "popup.html",
+   "defaut_icon": "icon.png"
+  },
+
+  "icons": {
+  	"128": "icon.png"
+  },
+
+"content_scripts": [ {
+    "js": [ "jquery-1.11.3.min.js"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }],
+
+  "permissions": [
+   ]
+
+}
+
